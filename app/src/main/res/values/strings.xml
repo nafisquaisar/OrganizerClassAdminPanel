@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Organizer Admin Panel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_the_url_of_video">Enter the URL of Video</string>
+    <string name="enter_the_title">Enter the Title</string>
+    <string name="organizer_admin_panel">Organizer Admin Panel</string>
+    <string name="enter_the_description">Enter the Description</string>
+    <string name="enter_the_mark">Enter Total mark</string>
+    <string name="animation_view_desc">Empty list animation\t</string>
+</resources>

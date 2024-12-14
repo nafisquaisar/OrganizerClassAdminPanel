@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <!-- Include the toolbar layout -->
+   <LinearLayout
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/toolbarbg"
+       android:orientation="horizontal"
+       android:padding="@dimen/_5sdp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+       <ImageView
+           android:id="@+id/backarrow"
+           android:layout_width="@dimen/_18sdp"
+           android:layout_height="@dimen/_18sdp"
+           android:src="@drawable/baseline_arrow_back_ios_24"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_1sdp"
+           android:layout_marginStart="@dimen/_10sdp"
+           />
+      <TextView
+          android:id="@+id/titleName"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="@string/organizer_admin_panel"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+         android:layout_marginStart="@dimen/_10sdp"
+          android:textColor="@color/white"
+          android:textSize="@dimen/_20sdp"
+          android:textStyle="bold" />
+
+   </LinearLayout>
+
+   <!-- FrameLayout for fragment container -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"
+        />
+</LinearLayout>

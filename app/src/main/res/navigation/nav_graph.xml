@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_testPanelFragment"
+            app:destination="@id/testPanelFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_PYQFragment"
+            app:destination="@id/PYQFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_doubtFragment"
+            app:destination="@id/doubtFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_courseFragment"
+            app:destination="@id/courseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.NoteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" />
+    <fragment
+        android:id="@+id/PYQFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.PYQFragment"
+        android:label="fragment_p_y_q"
+        tools:layout="@layout/fragment_p_y_q" />
+    <fragment
+        android:id="@+id/testPanelFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.TestPanelFragment"
+        android:label="fragment_test_panel"
+        tools:layout="@layout/fragment_test_panel" >
+        <action
+            android:id="@+id/action_testPanelFragment_to_testQuestionFragment"
+            app:destination="@id/testQuestionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testQuestionFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.TestQuestionFragment"
+        android:label="fragment_test_question"
+        tools:layout="@layout/fragment_test_question"
+        />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/doubtFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.DoubtFragment"
+        android:label="fragment_doubt"
+        tools:layout="@layout/fragment_doubt" >
+        <action
+            android:id="@+id/action_doubtFragment_to_doubtListFragment"
+            app:destination="@id/doubtListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doubtListFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.DoubtListFragment"
+        android:label="fragment_doubt_list"
+        tools:layout="@layout/fragment_doubt_list" >
+        <action
+            android:id="@+id/action_doubtListFragment_to_doubtSolveFragment"
+            app:destination="@id/doubtSolveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doubtSolveFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.DoubtSolveFragment"
+        android:label="fragment_doubt_solve"
+        tools:layout="@layout/fragment_doubt_solve" />
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_courseFragment_to_courseClassAndTestFragment"
+            app:destination="@id/courseClassAndTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chapterFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.ChapterFragment"
+        android:label="fragment_chapter"
+        tools:layout="@layout/fragment_chapter" >
+        <action
+            android:id="@+id/action_chapterFragment_to_courseContentFragment"
+            app:destination="@id/courseContentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/courseContentFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.CourseContentFragment"
+        android:label="fragment_course_content"
+        tools:layout="@layout/fragment_course_content" >
+        <action
+            android:id="@+id/action_courseContentFragment_to_videoFragmentView"
+            app:destination="@id/videoFragmentView" />
+        <action
+            android:id="@+id/action_courseContentFragment_to_noteFragmentView"
+            app:destination="@id/noteFragmentView" />
+        <action
+            android:id="@+id/action_courseContentFragment_to_dppFragmentView"
+            app:destination="@id/dppFragmentView" />
+    </fragment>
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.SubjectsFragment"
+        android:label="fragment_subjects"
+        tools:layout="@layout/fragment_subjects" />
+    <fragment
+        android:id="@+id/noteFragmentView"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.NoteFragmentView"
+        android:label="fragment_note_view"
+        tools:layout="@layout/fragment_note_view" />
+    <fragment
+        android:id="@+id/videoFragmentView"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.VideoFragmentView"
+        android:label="fragment_video_view"
+        tools:layout="@layout/fragment_video_view" />
+    <fragment
+        android:id="@+id/dppFragmentView"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.DppFragmentView"
+        android:label="fragment_dpp_view"
+        tools:layout="@layout/fragment_dpp_view" />
+
+
+    <fragment
+        android:id="@+id/courseClassAndTestFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.Fragment.CourseClassAndTestFragment"
+        android:label="fragment_course_class_and_test"
+        tools:layout="@layout/fragment_course_class_and_test" >
+        <action
+            android:id="@+id/action_courseClassAndTestFragment_to_chapterFragment"
+            app:destination="@id/chapterFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/courseTestFragment"
+        android:name="com.example.nafis.nf2024.organizeradminpanel.CourseTestFragment"
+        android:label="fragment_course_test"
+        tools:layout="@layout/fragment_course_test" />
+</navigation>

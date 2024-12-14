@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:layout_margin="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    android:elevation="@dimen/_100sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/card_bg"
+        >
+
+        <ImageView
+            android:id="@+id/courseImg"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/biharboardbanner"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:background="@color/card_bg"
+           >
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               >
+               <TextView
+                   android:id="@+id/courseTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Course Title"
+                   android:singleLine="true"
+                   android:ellipsize="marquee"
+                   android:marqueeRepeatLimit="marquee_forever"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:focusable="true"
+                   android:scrollHorizontally="true"
+                   android:focusableInTouchMode="true"
+                   android:layout_gravity="center"
+                   android:textSize="@dimen/_16sdp"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  >
+                  <TextView
+                      android:id="@+id/courseOfferPrice"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="100"
+                      android:layout_marginEnd="@dimen/_10sdp"
+                      android:layout_gravity="center"
+                      android:textSize="@dimen/_16sdp"
+                      android:textColor="@color/black"
+                      />
+                  <TextView
+                      android:id="@+id/coursePrice"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="100"
+                      android:layout_gravity="center"
+                      android:textSize="@dimen/_16sdp"
+                      android:textColor="@color/black"
+                   />
+
+              </LinearLayout>
+
+           </LinearLayout>
+
+           <ImageView
+               android:id="@+id/more"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_gravity="right"
+               android:src="@drawable/more"
+               app:tint="@color/black" />
+       </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
